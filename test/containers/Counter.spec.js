@@ -65,26 +65,29 @@ describe('containers', () => {
         expect(pre.text()).toMatch(/"value": 2/);
       }));
 
-    it('should change if incrementAsync button clicked', done => setup(1)
-      .then(({ buttons, pre }) => {
+    it('should change if incrementAsync button clicked', done => {
+      setup(1).then(({ buttons, pre }) => {
         buttons.at(3).simulate('click');
         setTimeout(() => {
           expect(pre.text()).toMatch(/"value": 2/);
           done();
         }, 1000);
-      }));
+      });
+    });
 
-    it('should display updated count after load button click', done => setup(1)
-      .then(({ buttons, pre }) => {
-        nock.cleanAll();
-        nock('http://' + config.apiHost + ':' + config.apiPort)
-          .get('/counter')
-          .reply(200, { value: 100 });
-        buttons.at(4).simulate('click');
-        setTimeout(() => {
-          expect(pre.text()).toMatch(/"value": 100/);
-          done();
-        }, 1000);
-      }));
+    it('should display updated count after load button click', done => {
+      setup(1)
+        .then(({ buttons, pre }) => {
+          nock.cleanAll();
+          nock('http://' + config.apiHost + ':' + config.apiPort)
+            .get('/counter')
+            .reply(200, { value: 100 });
+          buttons.at(4).simulate('click');
+          setTimeout(() => {
+            expect(pre.text()).toMatch(/"value": 100/);
+            done();
+          }, 1000);
+        });
+    });
   });
 });
