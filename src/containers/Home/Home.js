@@ -91,7 +91,7 @@ export default class Home extends Component { // eslint-disable-line
               </li>
               <li>
                 <strong>支持Universal渲染</strong>：单一数据源这个原则可以帮助解决Universal渲染中的数据传递问题：
-                服务端渲染后只须给客户端传递一个变量即可，这个变量就是那颗单一state树。
+                服务端渲染后只须给客户端传递一个变量即可，这个变量就是存储state的对象树。
               </li>
               <li>
                 <strong>优秀的拓展能力</strong>：Redux支持多种拓展方式，但主要是中间件的拓展。
