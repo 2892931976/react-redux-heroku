@@ -51,7 +51,7 @@ export default class Home extends Component { // eslint-disable-line
 
             <p>
               如果你对React究竟是什么还是很困惑，我的建议是，不用过于纠结，只管先用起来, 在实际的使用中慢慢理解它。
-              本书将教你如何用React开发Web程序。
+              本书将教你如何用 React开发Web程序。
             </p>
 
           </div>
@@ -78,7 +78,7 @@ export default class Home extends Component { // eslint-disable-line
             </p>
 
             <p>
-              了解上述基本原则后，或许你会问：“为何我要使用Redux？”这是个好问题！使用Redux将会给你的项目带来这些收益：
+              了解上述基本原则后，或许你会问：“为何我要使用Redux？“这是个好问题！使用Redux将会给你的项目带来这些收益：
             </p>
 
             <ul>
@@ -113,7 +113,7 @@ export default class Home extends Component { // eslint-disable-line
 
             <p>
               Reducer的纯函数、不可变、函数组合，中间件的管道、柯里化这些思想都属于函数式编程的范畴。在Redux中，函数式编程被重度使用，
-              甚至连“Redux”这个名字都充满了浓浓的函数式编程意味（reduce是函数式编程中经常使用的遍历累加数组元素的方法）。
+              甚至连“Redux“这个名字都充满了浓浓的函数式编程意味（reduce是函数式编程中经常使用的遍历累加数组元素的方法）。
               函数式编程使得代码变得更加简洁和模块化。熟悉函数式编程对于理解Redux的原理思想是非常有帮助的。
               本书将会在介绍Redux的同时，穿插函数式编程的知识拓展。希望你在读完本书后能够感受到Redux与函数式编程之美。
             </p>
