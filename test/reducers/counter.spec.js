@@ -1,5 +1,5 @@
 import expect from 'expect';
-import { counter } from '../../src/reducers/counter';
+import counter from '../../src/reducers/counter';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../src/actions/counter';
 
 describe('reducers', () => {
