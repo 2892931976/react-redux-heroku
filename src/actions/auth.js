@@ -2,7 +2,7 @@ import { ASYNC } from 'redux-amr';
 import { customFetch } from '../utils/utils';
 
 export function shouldLoadAuth(state) {
-  if (!state.async.loadState) return true;
+  if (!state.async.loadState.user) return true;
   const loaded = state.async.loadState.user.loaded;
   return !loaded;
 }

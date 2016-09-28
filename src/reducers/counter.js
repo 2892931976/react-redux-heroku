@@ -1,12 +1,10 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
 
 const initialState = {
-  counter: {
-    value: 0
-  }
+  value: 0
 };
 
-export function counter(state, action) {
+function counter(state = initialState, action) {
   switch (action.type) {
     case INCREMENT_COUNTER:
       return {
@@ -21,15 +19,4 @@ export function counter(state, action) {
   }
 }
 
-export default reducer => (state = initialState, action) => {
-  switch (action.type) {
-    case INCREMENT_COUNTER:
-    case DECREMENT_COUNTER:
-      return {
-        ...state,
-        counter: counter(state.counter, action)
-      };
-    default:
-      return reducer(state, action);
-  }
-};
+export default counter;
