@@ -51,7 +51,7 @@ export default class Home extends Component { // eslint-disable-line
 
             <p>
               如果你对React究竟是什么还是很困惑，我的建议是，不用过于纠结，只管先用起来, 在实际的使用中慢慢理解它。
-              本书将教你如何用 React开发Web程序。
+              本书将教你如何用React开发Web程序。
             </p>
 
           </div>

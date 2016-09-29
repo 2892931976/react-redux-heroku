@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { reducerCreator } from 'redux-amr';
+import { reducerCreator } from 'redux-amrc';
 import { reducer as formReducer } from 'redux-form';
 import counter from './counter';
 
