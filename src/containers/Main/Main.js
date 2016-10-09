@@ -44,27 +44,27 @@ class Main extends Component {
             <Nav navbar>
               {user && (
                 <LinkContainer to="/counter">
-                  <NavItem>计数器</NavItem>
+                  <NavItem eventKey={1}>计数器</NavItem>
                 </LinkContainer>)}
               {user && (
                 <LinkContainer to="/forms">
-                  <NavItem>表单</NavItem>
+                  <NavItem eventKey={2}>表单</NavItem>
                 </LinkContainer>)}
               {user && (
                 <LinkContainer to="/statistic">
-                  <NavItem>统计</NavItem>
+                  <NavItem eventKey={3}>统计</NavItem>
                 </LinkContainer>)}
             </Nav>
             <Nav navbar pullRight>
               {!user && (
                 <LinkContainer to="/login">
-                  <NavItem>登录</NavItem>
+                  <NavItem eventKey={4}>登录</NavItem>
                 </LinkContainer>
               )}
               {user && (
-                <NavDropdown title={user.name} id="usernameDropdown">
+                <NavDropdown eventKey={5} title={user.name} id="usernameDropdown">
                   <LinkContainer to="/logout">
-                    <MenuItem onClick={this.handleLogout}>登出</MenuItem>
+                    <MenuItem eventKey={5.1} onClick={this.handleLogout}>登出</MenuItem>
                   </LinkContainer>
                 </NavDropdown>
               )}
